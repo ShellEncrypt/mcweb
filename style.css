@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+}
+
+.background{
+    width: 201.5%;
+    height: 100%;
+    list-style: none;
+    z-index: 1;
+}
+
+.background li span{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    opacity: 0;
+    z-index: 0;
+    backface-visibility: hidden;
+    animation: animate 40s linear infinite 0s;
+}
+
+.background li:nth-child(1) span{
+    background-image: linear-gradient(#0000004f, 80%, rgb(0, 0, 0)), url("img/mountain.png");
+}
+.background li:nth-child(2) span{
+    background-image: linear-gradient(#0000004f, 80%, rgb(0, 0, 0)), url("img/fungus.png");
+    animation-delay: 8s;
+}
+.background li:nth-child(3) span{
+    background-image: linear-gradient(#0000004f, 80%, rgb(0, 0, 0)), url("img/river.png");
+    animation-delay: 16s;
+}
+.background li:nth-child(4) span{
+    background-image: linear-gradient(#0000004f, 80%, rgb(0, 0, 0)), url("img/lava.png");
+    animation-delay: 24s;
+}
+.background li:nth-child(5) span{
+    background-image: linear-gradient(#0000004f, 80%, rgb(0, 0, 0)), url("img/jungle.png");
+    animation-delay: 32s;
+}
+.background li:nth-child(6) span{
+    background-image: linear-gradient(#0000004f, 80%, rgb(0, 0, 0)), url("img/plain.png");
+    animation-delay: 40s;
+}
+.background li:nth-child(7) span{
+    background-image: linear-gradient(#0000004f, 80%, rgb(0, 0, 0)), url("img/ice.png");
+    animation-delay: 48s;
+}
+.background li:nth-child(8) span{
+    background-image: linear-gradient(#0000004f, 80%, rgb(0, 0, 0)), url("img/wrapped_forest.png");
+    animation-delay: 56s;
+}
+.background li:nth-child(9) span{
+    background-image: linear-gradient(#0000004f, 80%, rgb(0, 0, 0)), url("img/hoglin.png");
+    animation-delay: 64s;
+}
+.background li:nth-child(10) span{
+    background-image: linear-gradient(#0000004f, 80%, rgb(0, 0, 0)), url("img/soul_sand.png");
+    animation-delay: 72s;
+}
+.background li:nth-child(11) span{
+    background-image: linear-gradient(#0000004f, 80%, rgb(0, 0, 0)), url("img/basalt.png");
+    animation-delay: 80s;
+}
+.background li:nth-child(12) span{
+    background-image: linear-gradient(#0000004f, 80%, rgb(0, 0, 0)), url("img/end_islands.png");
+    animation-delay: 88s;
+}
+.background li:nth-child(13) span{
+    background-image: linear-gradient(#0000004f, 80%, rgb(0, 0, 0)), url("img/end_ship.png");
+    animation-delay: 96s;
+}
+.background li:nth-child(14) span{
+    background-image: linear-gradient(#0000004f, 80%, rgb(0, 0, 0)), url("img/enderman.png");
+    animation-delay: 104s;
+}
+.background li:nth-child(15) span{
+    background-image: linear-gradient(#0000004f, 80%, rgb(0, 0, 0)), url("img/end_city.png");
+    animation-delay: 112s;
+}
+
+@keyframes animate{
+    0%{
+        opacity: 0;
+        animation-timing-function: ease-in;
+    }
+    12.5%{
+        opacity: 1;
+        animation-timing-function: ease-out;
+    }
+    25%{
+        opacity: 0;
+    }
+    37.5%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes animate{
+    0%{
+        opacity: 0;
+    }
+    12.5%{
+        opacity: 1;
+    }
+    25%{
+        opacity: 1;
+    }
+    37.5%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.no-cssanimations .background li span {opacity: 1;}
+
+.title{
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(255, 255, 255);
+    opacity: 0.99;
+    font-size: 10vh;
+    margin-top: 25vh;
+    z-index: 1;
+}
+
+.title_blur{
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(255, 255, 255);
+    opacity: 0.99;
+    font-size: 10vh;
+    margin-top: 25vh;
+    filter: blur(10px);
+    z-index: 0;
+}
+
+.abo{
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(255, 255, 255, 0.7);
+    opacity: 0.99;
+    font-size: 3vh;
+    margin-top: 40vh;
+    z-index: 1;
+}
+
+.abo_blur{
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgba(255, 255, 255, 0.7);
+    opacity: 0.99;
+    font-size: 3vh;
+    margin-top: 40vh;
+    filter: blur(10px);
+    z-index: 0;
+}
+
+.img_1{
+    width: 201.5%;
+    height: 100%;
+    list-style: none;
+    z-index: 1;
+}
+
+.img_1 li span{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    opacity: 0.999;
+    backface-visibility: hidden;
+    margin-top: 120vh;
+}
+
+.img_1 li:nth-child(1) span{
+    background-image: linear-gradient(#000000, 40%, #00000000, #000000) ,url("img/bare/basalt.png");
+}
+
+.img_1 .title{
+    margin: 5vh;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(255, 255, 255);
+    opacity: 0.99;
+    font-size: 10vh;
+    margin-top: 150vh;
+    z-index: 1;
+}
+
+.img_1 .text{
+    margin: 5vh;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(255, 255, 255);
+    opacity: 0.99;
+    font-size: 5vh;
+    margin-top: 165vh;
+    z-index: 1;
+}
+
+.img_2{
+    width: 201.5%;
+    height: 100%;
+    list-style: none;
+    z-index: 1;
+}
+
+.img_2 li span{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    opacity: 0.999;
+    backface-visibility: hidden;
+    margin-top: 225vh;
+}
+
+.img_2 li:nth-child(1) span{
+    background-image: linear-gradient(#000000, 40%, #00000000, #000000) ,url("img/bare/end.png");
+}
+
+.img_2 .title{
+    margin: 5vh;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(255, 255, 255);
+    opacity: 0.99;
+    font-size: 10vh;
+    margin-top: 260vh;
+    z-index: 1;
+}
+
+.img_2 .text{
+    margin: 5vh;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(255, 255, 255);
+    opacity: 0.99;
+    font-size: 5vh;
+    margin-top: 275vh;
+    z-index: 1;
+}
